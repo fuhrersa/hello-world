@@ -9,10 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //MARK: Properties
 
+    @IBOutlet weak var myLabel: UILabel!
+
+    @IBOutlet weak var myButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    //MARK: Actions
+    
+    @IBAction func setDefaultText(sender: UIButton) {
+        myLabel.text = "lkjlkj"
     }
 
     override func didReceiveMemoryWarning() {
