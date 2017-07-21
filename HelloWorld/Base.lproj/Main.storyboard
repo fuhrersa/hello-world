@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="emr-06-LFN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="emr-06-LFN">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="O8g-HB-f43">
             <objects>
-                <viewController id="emr-06-LFN" sceneMemberID="viewController">
+                <viewController id="emr-06-LFN" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bl3-In-xLY"/>
                         <viewControllerLayoutGuide type="bottom" id="LqE-iA-OGT"/>
@@ -31,34 +31,30 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="v52-sz-LSC">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="148.5"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="The stack" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BmF-hN-Zkd">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MbC-3R-oGw">
                                                         <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
-                                                        <color key="backgroundColor" red="0.70956148066280744" green="0.77214249320652173" blue="0.56833174452922663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="The stack" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w9V-6g-FNg">
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="war-jS-Khc">
                                                         <rect key="frame" x="0.0" y="37" width="320" height="37.5"/>
-                                                        <color key="backgroundColor" red="0.70956148070000002" green="0.77214249319999995" blue="0.56833174450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="The stack" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G5b-GJ-uHT">
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FlR-Pu-1Tr">
                                                         <rect key="frame" x="0.0" y="74.5" width="320" height="37"/>
-                                                        <color key="backgroundColor" red="0.70956148070000002" green="0.77214249319999995" blue="0.56833174450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="The stack" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vf5-z3-d1b">
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5el-wK-fBX">
                                                         <rect key="frame" x="0.0" y="111.5" width="320" height="37"/>
-                                                        <color key="backgroundColor" red="0.70956148070000002" green="0.77214249319999995" blue="0.56833174450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="qoO-0c-9Xj">
@@ -96,23 +92,32 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ViW-df-ULx">
                                                         <rect key="frame" x="0.0" y="80" width="320" height="79"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYv-k5-2Sq">
+                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYv-k5-2Sq">
                                                                 <rect key="frame" x="0.0" y="0.0" width="79.5" height="79"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                                 <state key="normal" title="7"/>
+                                                                <connections>
+                                                                    <action selector="pushNumber:" destination="emr-06-LFN" eventType="touchUpInside" id="xG7-Ez-DRB"/>
+                                                                </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qm5-Fm-LX1">
+                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qm5-Fm-LX1">
                                                                 <rect key="frame" x="80.5" y="0.0" width="79" height="79"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                                 <state key="normal" title="8"/>
+                                                                <connections>
+                                                                    <action selector="pushNumber:" destination="emr-06-LFN" eventType="touchUpInside" id="CUN-g4-yRg"/>
+                                                                </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1t-df-U9g">
+                                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1t-df-U9g">
                                                                 <rect key="frame" x="160.5" y="0.0" width="79.5" height="79"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                                 <state key="normal" title="9"/>
+                                                                <connections>
+                                                                    <action selector="pushNumber:" destination="emr-06-LFN" eventType="touchUpInside" id="NLP-a6-1OE"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oef-9W-9H2">
                                                                 <rect key="frame" x="241" y="0.0" width="79" height="79"/>
@@ -125,23 +130,32 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="cYU-Sf-nUI">
                                                         <rect key="frame" x="0.0" y="160" width="320" height="79.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gev-Ua-0ky">
+                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gev-Ua-0ky">
                                                                 <rect key="frame" x="0.0" y="0.0" width="79.5" height="79.5"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                                 <state key="normal" title="4"/>
+                                                                <connections>
+                                                                    <action selector="pushNumber:" destination="emr-06-LFN" eventType="touchUpInside" id="ofQ-Qx-aTb"/>
+                                                                </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdZ-9g-8rG">
+                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdZ-9g-8rG">
                                                                 <rect key="frame" x="80.5" y="0.0" width="79" height="79.5"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                                 <state key="normal" title="5"/>
+                                                                <connections>
+                                                                    <action selector="pushNumber:" destination="emr-06-LFN" eventType="touchUpInside" id="iBa-hn-qda"/>
+                                                                </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ho-WD-vcw">
+                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ho-WD-vcw">
                                                                 <rect key="frame" x="160.5" y="0.0" width="79.5" height="79.5"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                                 <state key="normal" title="6"/>
+                                                                <connections>
+                                                                    <action selector="pushNumber:" destination="emr-06-LFN" eventType="touchUpInside" id="28t-Wh-rCv"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yts-PI-W73">
                                                                 <rect key="frame" x="241" y="0.0" width="79" height="79.5"/>
@@ -154,23 +168,32 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="XEM-M1-W5q">
                                                         <rect key="frame" x="0.0" y="240.5" width="320" height="79"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEg-CS-cOw">
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEg-CS-cOw">
                                                                 <rect key="frame" x="0.0" y="0.0" width="79.5" height="79"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                                 <state key="normal" title="1"/>
+                                                                <connections>
+                                                                    <action selector="pushNumber:" destination="emr-06-LFN" eventType="touchUpInside" id="0m9-Nv-9aC"/>
+                                                                </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luX-zc-fGm">
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luX-zc-fGm">
                                                                 <rect key="frame" x="80.5" y="0.0" width="79" height="79"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                                 <state key="normal" title="2"/>
+                                                                <connections>
+                                                                    <action selector="pushNumber:" destination="emr-06-LFN" eventType="touchUpInside" id="IFB-Su-kRA"/>
+                                                                </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeG-Tz-tXG">
+                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeG-Tz-tXG">
                                                                 <rect key="frame" x="160.5" y="0.0" width="79.5" height="79"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                                 <state key="normal" title="3"/>
+                                                                <connections>
+                                                                    <action selector="pushNumber:" destination="emr-06-LFN" eventType="touchUpInside" id="F32-DY-Dcv"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtS-fa-nKn">
                                                                 <rect key="frame" x="241" y="0.0" width="79" height="79"/>
@@ -191,6 +214,9 @@
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                                         <state key="normal" title="0"/>
+                                                                        <connections>
+                                                                            <action selector="pushNumber:" destination="emr-06-LFN" eventType="touchUpInside" id="NjW-kN-M3M"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tF6-4U-dwA">
                                                                         <rect key="frame" x="80.5" y="0.0" width="79" height="79"/>
@@ -226,6 +252,31 @@
                             <constraint firstItem="YkX-gL-YQi" firstAttribute="top" secondItem="bl3-In-xLY" secondAttribute="bottom" id="sPT-yc-Z2m"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="decimalButton" destination="tF6-4U-dwA" id="ufg-Ot-OML"/>
+                        <outlet property="deleteButton" destination="Jzs-rj-87h" id="Zjl-Av-2es"/>
+                        <outlet property="divButton" destination="qST-Br-5YS" id="s3h-gh-2LE"/>
+                        <outlet property="eightButton" destination="qm5-Fm-LX1" id="LIC-zJ-pfL"/>
+                        <outlet property="enterButton" destination="2hG-iv-Kot" id="N9Y-f2-e03"/>
+                        <outlet property="fiveButton" destination="MdZ-9g-8rG" id="oKu-GR-QtH"/>
+                        <outlet property="fourButton" destination="gev-Ua-0ky" id="TfZ-a8-Fpm"/>
+                        <outlet property="invButton" destination="6KR-Ys-R43" id="MLL-mb-JpK"/>
+                        <outlet property="minusButton" destination="oef-9W-9H2" id="PVQ-mK-yhF"/>
+                        <outlet property="multButton" destination="oef-9W-9H2" id="Yl9-2q-ABX"/>
+                        <outlet property="nineButton" destination="i1t-df-U9g" id="7Hi-P4-48h"/>
+                        <outlet property="oneButton" destination="vEg-CS-cOw" id="NLK-et-zKU"/>
+                        <outlet property="plusButton" destination="vtS-fa-nKn" id="xeF-lS-wv7"/>
+                        <outlet property="sevenButton" destination="DYv-k5-2Sq" id="p1v-U4-UBu"/>
+                        <outlet property="signButton" destination="UFb-pk-qzM" id="AVe-xq-TMp"/>
+                        <outlet property="sixButton" destination="8ho-WD-vcw" id="i1L-np-dkY"/>
+                        <outlet property="stack0Label" destination="5el-wK-fBX" id="i0a-1H-sRb"/>
+                        <outlet property="stack1Label" destination="FlR-Pu-1Tr" id="tKA-fy-15W"/>
+                        <outlet property="stack2Label" destination="war-jS-Khc" id="Ggk-aK-bNV"/>
+                        <outlet property="stack3Label" destination="MbC-3R-oGw" id="iet-9u-hi2"/>
+                        <outlet property="threeButton" destination="zeG-Tz-tXG" id="Nqa-ad-632"/>
+                        <outlet property="twoButton" destination="luX-zc-fGm" id="jHl-yy-nwb"/>
+                        <outlet property="zeroButton" destination="w5p-Uq-oEE" id="gS9-aj-Beo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glk-cB-VSI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

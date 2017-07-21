@@ -11,26 +11,46 @@ import XCTest
 
 class HelloWorldTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    let a: Double = 12.3
+    let b: Double = -13.2
+    
+    //MARK: Stack test
+    func testStackInitializatoinSucceeds() {
+        let stack = Stack.init(name: "stack")
+        XCTAssertNotNil(stack)
+        XCTAssertTrue(stack.depth==0)
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testPopPush() {
+        let stack = Stack.init(name: "stack")
+        
+        // push 10 values
+        for depth in 1...10 {
+            stack.push(Double(depth))
+            XCTAssertTrue(stack.depth == depth)
         }
+        
+        // pop 10 value
+        for depth in (1...10).reversed() {
+            let r = stack.pop()
+            
+            XCTAssertTrue(stack.depth == depth-1)
+            XCTAssertTrue(Int(r!) == depth)
+        }
+        
+        // try to pop empty stack
+        let r = stack.pop()
+        XCTAssertTrue(stack.depth == 0)
+        XCTAssertTrue(r == nil)
     }
     
+    func testAdd() {
+        let stack = Stack.init(name: "stack")
+        stack.push(a)
+        stack.push(b)
+        
+        let r = stack.add()
+        
+        XCTAssertTrue(stack.pop !== a+b)
+    }
 }
