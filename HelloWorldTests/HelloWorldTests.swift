@@ -30,18 +30,18 @@ class HelloWorldTests: XCTestCase {
             XCTAssertTrue(stack.depth == depth)
         }
         
+        var r: Double = 0.0
         // pop 10 value
         for depth in (1...10).reversed() {
-            let r = stack.pop()
+            
+            XCTAssertNoThrow(r = try stack.pop())
             
             XCTAssertTrue(stack.depth == depth-1)
-            XCTAssertTrue(Int(r!) == depth)
+            XCTAssertTrue(Int(r) == depth)
         }
         
         // try to pop empty stack
-        let r = stack.pop()
-        XCTAssertTrue(stack.depth == 0)
-        XCTAssertTrue(r == nil)
+        XCTAssertThrowsError(try stack.pop())
     }
     
     func testAdd() {
@@ -49,8 +49,7 @@ class HelloWorldTests: XCTestCase {
         stack.push(a)
         stack.push(b)
         
-        let r = stack.add()
-        
-        XCTAssertTrue(stack.pop !== a+b)
+        XCTAssertNoThrow(try stack.add())
+        XCTAssertTrue(try! stack.pop() == a+b)
     }
 }

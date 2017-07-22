@@ -10,6 +10,12 @@ import UIKit
 
 class Stack {
     
+    
+    enum StackError : Error {
+        case tooFewArguments(argsNeeded: Int)
+        case emptyStack
+    }
+    
     //MARK: Properties
     var name: String
     var stack = [Double]()
@@ -24,17 +30,30 @@ class Stack {
     }
     
     //MARK: Functions
-    func pop() -> Double? {
-        return depth > 0 ? stack.removeLast() : nil
+    func pop() throws -> Double {
+        if depth > 0 {
+            return stack.removeFirst()
+        }
+        else {
+            throw StackError.emptyStack
+        }
     }
     
-    func push(_ value: Double) -> Bool {
-        stack.append(value)
-        return true
+    func push(_ value: Double) {
+        stack.insert(value, at: 0)
     }
     
-    func add() -> Bool {
-        return depth < 2 ? false : push(pop()! + pop()!)
+    func add() throws {
+        if (depth < 2) {
+            throw StackError.tooFewArguments(argsNeeded: 2)
+        }
+        else  {
+            try push(pop() + pop())
+        }
+    }
+    
+    func get(_ index: Int) -> Double {
+        return stack[index]
     }
     
 }
