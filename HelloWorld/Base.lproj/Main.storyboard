@@ -126,7 +126,7 @@
                                                                     <action selector="pushNumber:" destination="emr-06-LFN" eventType="touchUpInside" id="NLP-a6-1OE"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oef-9W-9H2">
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oef-9W-9H2">
                                                                 <rect key="frame" x="241" y="0.0" width="79" height="79"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
@@ -164,7 +164,7 @@
                                                                     <action selector="pushNumber:" destination="emr-06-LFN" eventType="touchUpInside" id="28t-Wh-rCv"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yts-PI-W73">
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yts-PI-W73">
                                                                 <rect key="frame" x="241" y="0.0" width="79" height="79.5"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
@@ -207,40 +207,47 @@
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                                 <state key="normal" title="+"/>
+                                                                <connections>
+                                                                    <action selector="pushOperator:" destination="emr-06-LFN" eventType="touchUpInside" id="jAd-Ak-SSL"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="1mz-OZ-dGC">
                                                         <rect key="frame" x="0.0" y="320.5" width="320" height="79"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="6mw-zO-c46">
-                                                                <rect key="frame" x="0.0" y="0.0" width="159.5" height="79"/>
-                                                                <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5p-Uq-oEE">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="79.5" height="79"/>
-                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                                        <state key="normal" title="0"/>
-                                                                        <connections>
-                                                                            <action selector="pushNumber:" destination="emr-06-LFN" eventType="touchUpInside" id="NjW-kN-M3M"/>
-                                                                        </connections>
-                                                                    </button>
-                                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tF6-4U-dwA">
-                                                                        <rect key="frame" x="80.5" y="0.0" width="79" height="79"/>
-                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                                        <state key="normal" title="."/>
-                                                                        <connections>
-                                                                            <action selector="pushDecimalPoint:" destination="emr-06-LFN" eventType="touchUpInside" id="GlX-x8-DqS"/>
-                                                                        </connections>
-                                                                    </button>
-                                                                </subviews>
-                                                            </stackView>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hG-iv-Kot">
-                                                                <rect key="frame" x="160.5" y="0.0" width="159.5" height="79"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5p-Uq-oEE">
+                                                                <rect key="frame" x="0.0" y="0.0" width="79.5" height="79"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                                <state key="normal" title="ENTER"/>
+                                                                <state key="normal" title="0"/>
+                                                                <connections>
+                                                                    <action selector="pushNumber:" destination="emr-06-LFN" eventType="touchUpInside" id="NjW-kN-M3M"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tF6-4U-dwA">
+                                                                <rect key="frame" x="80.5" y="0.0" width="79" height="79"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                                <state key="normal" title="."/>
+                                                                <connections>
+                                                                    <action selector="pushDecimalPoint:" destination="emr-06-LFN" eventType="touchUpInside" id="GlX-x8-DqS"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itE-NK-MiI">
+                                                                <rect key="frame" x="160.5" y="0.0" width="79.5" height="79"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                                <state key="normal" title="EEX"/>
+                                                                <connections>
+                                                                    <action selector="pushExponent:" destination="emr-06-LFN" eventType="touchUpInside" id="3WA-Jo-dmK"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hG-iv-Kot">
+                                                                <rect key="frame" x="241" y="0.0" width="79" height="79"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                                <state key="normal" title="ENT"/>
                                                                 <connections>
                                                                     <action selector="pushEnter:" destination="emr-06-LFN" eventType="touchUpInside" id="e4F-Fp-X7f"/>
                                                                 </connections>
@@ -271,6 +278,7 @@
                         <outlet property="divButton" destination="qST-Br-5YS" id="s3h-gh-2LE"/>
                         <outlet property="eightButton" destination="qm5-Fm-LX1" id="LIC-zJ-pfL"/>
                         <outlet property="enterButton" destination="2hG-iv-Kot" id="N9Y-f2-e03"/>
+                        <outlet property="expButton" destination="itE-NK-MiI" id="GcT-54-NDX"/>
                         <outlet property="fiveButton" destination="MdZ-9g-8rG" id="oKu-GR-QtH"/>
                         <outlet property="fourButton" destination="gev-Ua-0ky" id="TfZ-a8-Fpm"/>
                         <outlet property="invButton" destination="6KR-Ys-R43" id="MLL-mb-JpK"/>

@@ -8,17 +8,17 @@
 
 import UIKit
 
+enum StackError : Error {
+    case emptyStack
+}
+
 class Stack {
     
-    
-    enum StackError : Error {
-        case tooFewArguments(argsNeeded: Int)
-        case emptyStack
-    }
     
     //MARK: Properties
     var name: String
     var stack = [Double]()
+    let maxSize = 6
 
     var depth: Int {
         get { return stack.count }
@@ -31,26 +31,20 @@ class Stack {
     
     //MARK: Functions
     func pop() throws -> Double {
-        if depth > 0 {
-            return stack.removeFirst()
-        }
-        else {
+        guard depth > 0 else {
             throw StackError.emptyStack
         }
+       
+        return stack.removeFirst()
     }
     
     func push(_ value: Double) {
         stack.insert(value, at: 0)
+        if (depth > maxSize) {
+            stack.removeLast()
+        }
     }
     
-    func add() throws {
-        if (depth < 2) {
-            throw StackError.tooFewArguments(argsNeeded: 2)
-        }
-        else  {
-            try push(pop() + pop())
-        }
-    }
     
     func get(_ index: Int) -> Double {
         return stack[index]

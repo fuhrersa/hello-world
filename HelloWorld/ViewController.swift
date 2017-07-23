@@ -33,6 +33,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var nineButton: UIButton!
     
     @IBOutlet weak var decimalButton: UIButton!
+    @IBOutlet weak var expButton: UIButton!
     
     @IBOutlet weak var plusButton: UIButton!
     @IBOutlet weak var minusButton: UIButton!
@@ -65,17 +66,46 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func pushExponent(_ sender: UIButton) {
+        calc.inputExponent()
+        updateStackDisplay()
+    }
+    
+    
     @IBAction func pushEnter(_ sender: UIButton) {
         calc.enter()
         updateStackDisplay()
     }
     
+    
+    @IBAction func pushOperator(_ sender: UIButton) {
+        switch (sender.tag) {
+            case 0: calc.add()
+ //           case 1: calc.subtract()
+ //           case 2: calc.multiply()
+ //           case 3: calc.divide()
+            default: break
+        }
+        updateStackDisplay()
+    }
+    
+    
+    //MARK: Functions
     func getStackString(index: Int) -> String {
         if (calc.stack.depth <= index) {
             return ""
         }
         else {
-            return String(format: "%.6f", calc.stack.get(index))
+            if (abs(calc.stack.get(index)) >= 1e9 || abs(calc.stack.get(index)) < 1e-6) {
+                var str = String(format: "%.6E", calc.stack.get(index))
+                if (str.contains("+")) {
+                    str.remove(at: str.range(of: "+")!.lowerBound)
+                }
+                return str
+            }
+            else {
+                return String(format: "%.6f", calc.stack.get(index))
+            }
         }
     }
     
@@ -94,8 +124,10 @@ class ViewController: UIViewController {
                 stackLabels[i].text = getStackString(index: i-1)
                 stackLabels[i].textAlignment = NSTextAlignment.right
             }
-            let sign = calc.sign < 0 ? "-" : ""
-            stackLabels[0].text = sign + String(calc.input) + "_"
+         
+            let str = String(calc.mantissa)
+        
+            stackLabels[0].text = str + "_"
             stack0Label.textAlignment = NSTextAlignment.left
 
         }
